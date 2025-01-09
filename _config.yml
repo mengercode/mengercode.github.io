@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "xumeng / Site Title"
+title                    : "xumeng homepages"
 title_separator          : "-"
 name                     : &name "xumeng"
 description              : &description ""
@@ -21,7 +21,7 @@ repository               : "mengercode/mengercode.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "xumeng.png"
   name             : "meng xu"
   pronouns         : # example: "she/her"  
   bio              : "Neuroelectric Language Interpreter"
