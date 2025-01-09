@@ -14,13 +14,19 @@ Research Interests
 Visual Evoked Potentials, Brain-Computer Interfaces, Multimodal Brain Cognition Research
 
 Research Projects
-General Program of China Postdoctoral Science Foundation: Research on Fine Motor Imagery Decoding Technology Based on Dual-Modality Information Fusion (Principal Investigator).
-CASIC "Brain Space" Youth Innovation Fund Project: Research on RSVP Paradigm EEG Electrode Shift Compensation Algorithm for Autonomous Motion Scenarios (Principal Investigator).
-Enterprise-Commissioned Project: Development of a Mapping Model Between Target Stimuli and Neural Activity (Principal Investigator).
-Enterprise-Commissioned Project: Design of RSVP Cross-Subject Transfer Scheme for Multi-Target Detection (Principal Investigator).
-Enterprise-Commissioned Project: Development of Brain-Computer Interaction Information Processing Module Based on Augmented Reality (Principal Investigator).
-Frontier Innovation Project of the State Administration of Science, Technology, and Industry for National Defense: XXX Technology Integrated with Brain-Computer Interfaces (Core Member).
-Rapid Support Project of the Central Military Commission Equipment Development Department: Research on Human-Machine Collaborative Enhanced Intelligent Interpretation Technology for Weak and Hidden Image Targets (Core Member).
+*General Program of China Postdoctoral Science Foundation: Research on Fine Motor Imagery Decoding Technology Based on Dual-Modality Information Fusion (Principal Investigator).
+
+*CASIC "Brain Space" Youth Innovation Fund Project: Research on RSVP Paradigm EEG Electrode Shift Compensation Algorithm for Autonomous Motion Scenarios (Principal Investigator).
+
+*Enterprise-Commissioned Project: Development of a Mapping Model Between Target Stimuli and Neural Activity (Principal Investigator).
+
+*Enterprise-Commissioned Project: Design of RSVP Cross-Subject Transfer Scheme for Multi-Target Detection (Principal Investigator).
+
+*Enterprise-Commissioned Project: Development of Brain-Computer Interaction Information Processing Module Based on Augmented Reality (Principal Investigator).
+
+*Frontier Innovation Project of the State Administration of Science, Technology, and Industry for National Defense: XXX Technology Integrated with Brain-Computer Interfaces (Core Member).
+
+*Rapid Support Project of the Central Military Commission Equipment Development Department: Research on Human-Machine Collaborative Enhanced Intelligent Interpretation Technology for Weak and Hidden Image Targets (Core Member).**
 
 Representative Works
 ======
