@@ -7,43 +7,32 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Xu Meng, Lecturer and Master's Supervisor, has been engaged in research on brain-computer interfaces and artificial intelligence, brain imaging data analysis, and multimodal physiological signal processing for an extended period. She has participated in the completion of several major JG scientific research projects, the National Natural Science Foundation of China, and the Beijing Natural Science Foundation. Over the past five years, she has published more than 15 academic papers in internationally renowned SCI/EI journals, obtained 4 authorized or substantively examined national invention patents, and 1 software copyright. She won second place nationwide in the Youth Paper Competition of the BCI Brain-Controlled Robot Contest at the World Robot Competition.
 
-A data-driven personal website
+Research Interests
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+Visual Evoked Potentials, Brain-Computer Interfaces, Multimodal Brain Cognition Research
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+Research Projects
+General Program of China Postdoctoral Science Foundation: Research on Fine Motor Imagery Decoding Technology Based on Dual-Modality Information Fusion (Principal Investigator).
+CASIC "Brain Space" Youth Innovation Fund Project: Research on RSVP Paradigm EEG Electrode Shift Compensation Algorithm for Autonomous Motion Scenarios (Principal Investigator).
+Enterprise-Commissioned Project: Development of a Mapping Model Between Target Stimuli and Neural Activity (Principal Investigator).
+Enterprise-Commissioned Project: Design of RSVP Cross-Subject Transfer Scheme for Multi-Target Detection (Principal Investigator).
+Enterprise-Commissioned Project: Development of Brain-Computer Interaction Information Processing Module Based on Augmented Reality (Principal Investigator).
+Frontier Innovation Project of the State Administration of Science, Technology, and Industry for National Defense: XXX Technology Integrated with Brain-Computer Interfaces (Core Member).
+Rapid Support Project of the Central Military Commission Equipment Development Department: Research on Human-Machine Collaborative Enhanced Intelligent Interpretation Technology for Weak and Hidden Image Targets (Core Member).
 
-Getting started
+Representative Works
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+[1] Zhang B, Xu M (Co-First Author), Wu Q, et al. Definition and analysis of gray matter atrophy subtypes in mild cognitive impairment based on data-driven methods [J]. Frontiers in Aging Neuroscience, 2024, 16: 1328301.
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+[2] Zhang B, Xu M (Corresponding Author), Zhang Y, et al. Attention-ProNet: A Prototype Network with Hybrid Attention Mechanisms Applied to Zero Calibration in Rapid Serial Visual Presentation-Based Brain–Computer Interface [J]. Bioengineering, 2024, 11(4): 347.
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+[3] Xu M, Chen Y, Wang D, et al. Multi-objective optimization approach for channel selection and cross-subject generalization in RSVP-based BCIs [J]. Journal of Neural Engineering, 2021, 18(4): 046076.
 
-**Markdown generator**
+[4] Xu M, Chen Y, Wang Y, et al. BWGAN-GP: An EEG data generation method for class imbalance problem in RSVP tasks [J]. IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2022, 30: 251-263.
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+[5] Xu M, Wang D, Li Z, et al. IncepA-EEGNet: P300 signal detection method based on fusion of Inception network and attention mechanism [J]. Journal of Zhejiang University (Engineering Science), 2022, 56(4): 745-753, 782.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
