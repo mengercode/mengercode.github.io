@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Xu Meng, Lecturer and Master's Supervisor has been engaged in research on brain-computer interfaces and artificial intelligence, brain imaging data analysis, and multimodal physiological signal processing for an extended period. She has participated in the completion of several major JG scientific research projects, at the National Natural Science Foundation of China, and the Beijing Natural Science Foundation. Over the past five years, I have published more than 15 academic papers in internationally renowned SCI/EI journals, obtained 4 authorized or substantively examined national invention patents, and 1 software copyright. I won second place nationwide in the Youth Paper Competition of the BCI Brain-Controlled Robot Contest at the World Robot Competition.
+Xu Meng, Lecturer and Master's Supervisor has been researching brain-computer interfaces and artificial intelligence, brain imaging data analysis, and multimodal physiological signal processing for an extended period. I have participated in the completion of several major JG scientific research projects, at the National Natural Science Foundation of China, and the Beijing Natural Science Foundation. Over the past five years, I have published over 15 academic papers in internationally renowned SCI/EI journals, obtained 4 authorized or substantively examined national invention patents, and 1 software copyright. I won second place nationwide in the Youth Paper Competition of the BCI Brain-Controlled Robot Contest at the World Robot Competition.
 
 Research Interests
 ======
