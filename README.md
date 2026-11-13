@@ -1,3 +1,24 @@
+# Xu Meng 许萌 · 学术主页
+
+## 新版首页
+
+新版首页为根目录的 `index.html`，布局参考 [GengyuLyu/homepage](https://github.com/GengyuLyu/homepage)，独立编写，不引入参考站的个人资料、统计脚本或外部字体。
+
+- 本地预览：直接用浏览器打开 `index.html`，或用 VS Code Live Server 打开。
+- 内容：编辑 `index.html`；照片沿用 `images/xumeng.png`，Scholar 与 ORCID 来自本仓库原配置。
+- 样式：`assets/css/homepage.css`；栏目切换：`assets/js/homepage.js`。
+- 默认显示个人简介，点击蓝色按钮切换论文、项目和联系方式。锚点地址可分享，前进/后退可恢复栏目。禁用 JavaScript 或打印时显示全部内容。
+- 右上角「中文 / English」切换完整语言版本，首次默认中文；允许本地存储时记住上次选择，切换语言不改变当前栏目。禁用 JavaScript 时显示中文全文并隐藏语言按钮。
+- 双语内容集中维护在 `index.html`：元素正文为中文，`data-en` 为英文；`data-i18n-attr` 指定需要翻译的属性（如照片替代文本）。论文英文标题、期刊名和链接保持原文。栏目切换保留轻量淡入动效，并遵循系统“减少动态效果”设置。
+- 旧 Jekyll 模板与内容保留；`_pages/about.md` 改为 `/about/` 并跳转到 `/`，避免覆盖新的静态首页。旧模板页面仍由 Jekyll 构建。
+- GitHub Pages 仍可使用当前分支根目录构建。无需新增依赖，也不要添加 `.nojekyll`，以免影响旧页面。此修改未自动提交、推送或部署。
+
+**资料核对：** 5 篇论文、7 个项目沿用已有资料；部分英文标题、期刊名存在疑似乱码（如 `Journal`、`Multi-objective`），未猜测修正文献内容。已移除一处乱码检索链接；其余 Scholar 链接仅为检索入口，不是已验证的论文原文地址。正式发布前请核对文献、照片使用许可及项目公开范围。
+
+---
+
+以下保留原模板说明，供维护旧页面时参考。
+
 # Academic Pages
 **Academic Pages is a Github Pages template for academic websites.**
 

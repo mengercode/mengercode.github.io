@@ -1,9 +1,9 @@
 ---
-permalink: /
+permalink: /about/
 title: "Basic Information"
 author_profile: true
-redirect_from: 
-  - /about/
+redirect_to: /
+redirect_from:
   - /about.html
 ---
 
