@@ -1,120 +1,29 @@
-# Academic Pages
+# 许萌个人学术主页
 
-**Academic Pages is a Github Pages template for academic websites.**
+## 运行
+这是无需安装依赖、无需构建的静态网站。可以直接双击 index.html。
+推荐在本目录打开终端执行 `python -m http.server 8000`，浏览器打开 http://localhost:8000 。
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+## GitHub Pages 部署
+1. 在 GitHub 创建公开仓库 `mengercode.github.io`（若账号不同，将 mengercode 替换成你的用户名）。
+2. 将本目录内所有文件上传到仓库 main 分支根目录，确保 index.html 在根目录，不要多套一层目录；保留 .nojekyll。
+3. 仓库 Settings → Pages → Build and deployment，Source 选择 Deploy from a branch，Branch 选择 main，目录选择 /(root)，保存。
+4. 等待 GitHub 完成发布后，访问 https://mengercode.github.io/ 。普通项目仓库也可以部署，地址为 https://用户名.github.io/仓库名/，本项目相对资源路径支持该方式。
+官方说明：https://docs.github.com/en/pages/quickstart
 
-# Getting Started
+## 修改内容
+- index.html：个人简介、项目、论文与联系方式。
+- images/xumeng.png：个人照片。
+- assets/css/homepage.css：布局、样式和手机适配。
+- assets/js/homepage.js：栏目展开/收起与链接定位。
+默认栏目收起；点击栏目展开，再次点击收起；只显示一个栏目。直接打开带 #publications 的网址可展开论文。打印时展示所有栏目。
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-2. Click the "Use this template" button in the top right.
-3. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-4. Set site-wide configuration and add your content.
-5. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-6. Check status by going to the repository settings, in the "GitHub pages" section
-7. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## 来源与差异
+参考页面：https://gengyulyu.github.io/homepage/ （2026-11-16 读取在线 HTML 和 CSS）。沿用参考页 Bootstrap 基础样式、字号、颜色、照片/简介比例及按钮交互；手机端改为流式宽度，避免原页面 min-width:1170px 的横向溢出。参考页加载 Roboto 但 Bootstrap 正文字体实际为 Helvetica Neue/Helvetica/Arial，因此沿用后者。
+实际已检查桌面上的 mengercode.github.io-master.zip 原始同名压缩包（当前环境不存在 /mnt/data 路径），核对其中 _config.yml、_pages/about.md 和个人照片，并参考 Downloads/xu_meng_homepage_reference_style (6).zip 的已有整理版继续修改。补回原材料内此前遗漏的 2024 年两篇、2022 年一篇论文。原始简介备份在 source-notes/original-about.md。个人履历与论文沿用资料，未独立核实。没有对应个人资料的团队、教学、学术服务栏目不虚构，以个人项目和联系栏目替代。原项目 Jekyll 模板与示例页面不再作为发布依赖，原始压缩包保持不变。
+浏览器验证：Chrome 无头模式实测初始收起、单栏目展开、再次收起、网址锚点展开；375、768、1024、1440 像素视口无横向溢出；打印显示全部六个栏目；无 JavaScript 运行错误。截图位于 preview/。
+无外部脚本、分析追踪与远程字体依赖。保留源项目 LICENSE；Bootstrap 与 Font Awesome 文件保留上游许可，Font Awesome 字体适用 SIL OFL 1.1。
+本次仅交付文件，未发布或更改 GitHub 仓库。
 
-See more info at https://academicpages.github.io/
-
-## Running locally
-
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-2. Make sure you have ruby-dev, bundler, and nodejs installed
-
-   On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-
-   ```bash
-   sudo apt install ruby-dev ruby-bundler nodejs
-   ```
-
-   On MacOS the commands are:
-
-   ```bash
-   brew install ruby
-   brew install node
-   gem install bundler
-   ```
-3. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-4. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by build the container:
-
-```bash
-docker build -t jekyll-site .
-```
-
-Next, run the container:
-
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
-```
-
-To run the `docker run` command on Windows, you need to adjust the syntax for the volume mapping (`-v`) as Windows uses different path formats. Here's how to run your command on Windows:
-
-### Steps for Windows:
-
-1. **Check Docker Installation**: Ensure Docker is installed and running.
-2. **Adjust Path for Volume Mapping**:
-
-   - On Windows, replace `$(pwd)` with the full absolute path to your current directory. For example:
-
-     ```bash
-     -v C:\path\to\your\site:/usr/src/app
-     ```
-
-### Full Command Example:
-
-```bash
-docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-```
-
-### Things to Keep in Mind:
-
-1. **Use PowerShell**:
-
-   - If you are using PowerShell, you can use `${PWD}` for the current directory:
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
-2. **Enable Docker File Sharing**:
-
-   - If your volume doesn't map correctly, ensure Docker has access to the drive where your project resides. To do this:
-     - Open Docker Desktop.
-     - Go to *Settings* → *Resources* → *File Sharing*.
-     - Add your drive (e.g., `C:`).
-3. **Run in Command Prompt or PowerShell**:
-
-   - In *Command Prompt*:
-
-     ```bash
-     docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-     ```
-   - In *PowerShell*:
-
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
----
-
-<div align="center">
+## 本次更新
+新增 Student Training（人才培养）和 Courses Taught（讲授课程）折叠栏目。未提供学生清单及课程名称，相关内容暂留英文待补充说明。九项研究项目的标题、资助来源和承担角色全部改为英文，论文中的作者身份说明也统一改为英文。
